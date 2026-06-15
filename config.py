@@ -30,5 +30,5 @@ BINARY_COLS = [
 
 TARGET_COL = "DEATH_EVENT"
 
-K_RANGE = range(2, 7)
+K_RANGE = range(2, 101)
 RANDOM_STATE = 42

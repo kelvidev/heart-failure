@@ -61,7 +61,7 @@ def run_training():
     print("\nMetaestimador escolhido: KMeans (suporta inferencia out-of-sample via centroides)")
     print("Melhor k para KMeans por silhouette: k={} (silhouette={:.4f})".format(k, sil))
 
-    model = KMeans(n_clusters=k, n_init=10, random_state=config.RANDOM_STATE)
+    model = KMeans(n_clusters=k, random_state=config.RANDOM_STATE)
     labels = model.fit_predict(X)
 
     scores = metrics.internal_metrics(X, labels)
